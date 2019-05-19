@@ -7,6 +7,12 @@
     <title>Document</title>
 </head>
 <body>
+<?php require 'views/header.php'?>
+    <section>
     <h1 style="color:red;"><?php echo $this->mensaje; ?></h1>
+    </section>
+
+    <?php require 'views/footer.php'?>
+
 </body>
 </html>

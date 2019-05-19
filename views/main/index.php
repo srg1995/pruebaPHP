@@ -7,6 +7,11 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Esta es la vista MAIN</h1>
+    <?php require 'views/header.php'?>
+    <section>
+        <h1 class="center">main principal WELCOME</h1>
+    </section>
+
+    <?php require 'views/footer.php'?>
 </body>
 </html>

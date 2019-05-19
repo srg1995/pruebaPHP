@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+section{
+    background: white;
+    width: 100%;
+}
+
+header{
+    background: #ccc;
+}
+
+.center{
+    text-align:center;
+}
+ ul li {
+    list-style: none;
+    display: inline;
+    padding: 10px;
+ }
+ ul li a{
+    text-decoration: none;
+    color: white;
+ }
+
+ form{
+     width: 30%;
+     margin: 0 auto;
+     border: solid 1px red;
+     text-align: center;
+ }
+footer{
+    background: gray;
+}

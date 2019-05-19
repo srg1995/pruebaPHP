@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -8,8 +9,10 @@
 </head>
 <body>
     <?php require 'views/header.php'?>
-    <h1> Esta es la vista Ayuda</h1>
-    <?php require 'views/footer.php'?>
+    <section>
+        <h1 class="center">CONSUKTA</h1>
+    </section>
 
+    <?php require 'views/footer.php'?>
 </body>
 </html>
