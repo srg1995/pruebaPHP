@@ -11,18 +11,31 @@
     <?php require 'views/header.php'?>
     <section>
         <h1 class="center">nuevo</h1>
-        <form method="POST" action="<?php echo constant('URL');?>nuevo/registrarAlumno">
+        <form method="POST" action="<?php echo constant('URL');?>nuevo/registrarCliente">
             <p>
-                <label for="matriula">Mtricula</label><br>
-                <input type="text" name="matricula">
-            </p>
-            </p>
                 <label for="nombre">nombre</label><br>
                 <input type="text" name="nombre">
+            </p>
+            <p>
+                <label for="apellidos">apellidos</label><br>
+                <input type="text" name="apellidos">
+            </p>
+            <p>
+                <label for="dni">dni</label><br>
+                <input type="text" name="dni" maxlength="9">
+            </p>
+            <p>
+                <label for="direccion">direccion</label><br>
+                <input type="text" name="direccion">
+            </p>
+            <p>
+                <label for="telefono">telefono</label><br>
+                <input type="text" name="telefono" maxlength="9">
             <p>
             </p>
-                <label for="appelidos">appelidos</label><br>
-                <input type="text" name="apellidos">
+                <label for="email">email</label><br>
+                <input type="email" name="email">
+            </p>
             <p>
                 <input type="submit" value="enviar">
 
