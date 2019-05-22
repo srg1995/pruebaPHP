@@ -3,9 +3,8 @@
 class View{
 
     function __construct(){
-       // echo "<p>vista base</p>";
     }
-
+    //funcion para mostrar la vista
     function render($nombre){
         require 'views/'. $nombre . '.php';
     }

@@ -10,37 +10,41 @@
 <body>
     <?php require 'views/header.php'?>
     <section>
-        <h1 class="center">nuevo</h1>
+        <h1 class="center">INSERTAR NUEVO CLIENTE</h1>
+        <div class="center"><?php echo $this->mensaje; ?></div>
         <form method="POST" action="<?php echo constant('URL');?>nuevo/registrarCliente">
-            <p>
-                <label for="nombre">nombre</label><br>
-                <input type="text" name="nombre">
-            </p>
-            <p>
-                <label for="apellidos">apellidos</label><br>
-                <input type="text" name="apellidos">
-            </p>
-            <p>
-                <label for="dni">dni</label><br>
-                <input type="text" name="dni" maxlength="9">
-            </p>
-            <p>
-                <label for="direccion">direccion</label><br>
-                <input type="text" name="direccion">
-            </p>
-            <p>
-                <label for="telefono">telefono</label><br>
-                <input type="text" name="telefono" maxlength="9">
-            <p>
-            </p>
-                <label for="email">email</label><br>
-                <input type="email" name="email">
-            </p>
-            <p>
-                <input type="submit" value="enviar">
+            <div class="form-group">
+                <label for="nombre">Nombre</label>
+                <input type="text" class="form-control" aria-describedby="emailHelp" placeholder="Nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="apellidos">Apellidos</label>
+                <input type="text" class="form-control" placeholder="Apellidos" required>
+            </div>
 
-            </p>
+            <div class="form-group">
+                <label for="dni">Dni</label>
+                <input type="text" class="form-control" placeholder="Dni" required>
+            </div>
+
+            <div class="form-group">
+                <label for="direccion">Direccion</label>
+                <input type="text" class="form-control" placeholder="Direccion" required>
+            </div>
+
+            <div class="form-group">
+                <label for="telefono">Telefono</label>
+                <input type="number" class="form-control" placeholder="Telefono" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" placeholder="Email" required>
+            </div>
+
+            <button type="submit" class="btn btn-outline-success">Registrar cliente</button>
         </form>
+
     </section>
 
     <?php require 'views/footer.php'?>
